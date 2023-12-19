@@ -1,0 +1,166 @@
+ @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: hsl(292, 59%, 90%);
+     font-display: optional;
+     font-family: 'Work Sans', sans-serif;
+     height: 100vh;
+     margin: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+
+
+ }
+
+ picture {
+     position: fixed;
+     top: 0;
+     z-index: -1;
+     width: 100%;
+     height: ;
+ }
+
+ picture>* {
+     object-fit: cover;
+
+ }
+
+ #card {
+     background-color: white;
+     width: 90%;
+     border-radius: 10px;
+     padding: 20px 15px 15px 15px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+
+
+ }
+
+ .title {
+     display: inline-flex;
+     gap: 15px;
+     align-content: center;
+     font-weight: 700;
+ }
+
+ .title h1 {
+     color: hsl(292, 42%, 14%);
+ }
+
+ .title span {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ #icon-star {
+     width: 75%;
+     height: 75%;
+ }
+
+ .accordion {
+     font-size: 16px;
+     color: hsl(292, 42%, 14%);
+     width: 100%;
+     font-weight: 600;
+     cursor: pointer;
+     padding: 18px 0 18px 0;
+     border: none;
+     text-align: left;
+     outline: none;
+     font-size: ;
+     transition: 0.4s;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .accordion span {
+     width: 80%;
+     line-height: 1.2em;
+ }
+
+ .accordion .icon {
+     transition: transform 0.4s;
+ }
+
+
+ .accordion:hover {
+     color: #AD28EB;
+ }
+
+ .accordion:focus {
+     color: #AD28EB;
+ }
+
+ .accordion .icon.active {
+
+     content: url("./assets/images/icon-plus.svg");
+ }
+
+ .accordion .icon:not(.active) {
+
+     content: url("./assets/images/icon-minus.svg");
+ }
+
+
+ .panel {
+     padding: 0;
+     background-color: white;
+     max-height: 0;
+     overflow: hidden;
+     color: hsl(292, 16%, 49%);
+     font-weight: 400;
+     font-size: 16px;
+     transition: max-height 0.2s ease-out;
+ }
+
+
+
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+ @media screen and (min-width: 1440px) {
+
+
+     picture {
+
+         height: 35%;
+     }
+
+     picture img {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+     }
+
+     #card {
+         width: 30%;
+     }
+
+
+     #icon-star {
+         width: 90%;
+         height: 90%;
+     }
+
+     .panel {
+         line-height: 1.4em;
+     }
+ }
