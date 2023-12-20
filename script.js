@@ -13,8 +13,8 @@ document.addEventListener('keydown', (e) => {
 
 function switchAccordionFocus(increase) {
     focusIndex += increase;
-    if (focusIndex < 0) focusIndex = accItens.length - 1;
-    if (focusIndex > accItens.length - 1) focusIndex = 0;
+    if (focusIndex < 0) focusIndex = acc.length - 1;
+    if (focusIndex > acc.length - 1) focusIndex = 0;
 
     acc[focusIndex].focus();
 }

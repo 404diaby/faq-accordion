@@ -8,7 +8,6 @@
 
  body {
      background-color: hsl(292, 59%, 90%);
-     font-display: optional;
      font-family: 'Work Sans', sans-serif;
      height: 100vh;
      margin: auto;
@@ -26,7 +25,7 @@
      top: 0;
      z-index: -1;
      width: 100%;
-     height: ;
+
  }
 
  picture>* {
@@ -78,7 +77,6 @@
      border: none;
      text-align: left;
      outline: none;
-     font-size: ;
      transition: 0.4s;
      display: flex;
      align-items: center;
